@@ -1,0 +1,329 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url("Background.svg");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #fff8da;
+  text-align: center;
+}
+  .caveat-brush-regular {
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+  }
+  
+  .title-image {
+    width: 500px;
+    height: auto;
+  } 
+  
+  .globe-gif {
+    width: 10%;
+    height: auto;
+    margin-top: 0%;
+    position:absolute;
+    top: 75px;
+
+  }
+  
+  .start-content {
+    margin-top: -15px;
+  }
+  
+  .startbtn {
+    background-color: #f5b934;
+    color: #1c035b;
+    padding: 30px 60px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    margin: 10px;
+    width: 500px;
+    height: 100px;
+    text-decoration: none;
+  }
+  
+  .start-btn:hover {
+    background-color: #ffcb4c;
+  }
+  
+  .flag-img {
+    width: 300px;
+    height: auto;
+    margin: 30px;
+    border: 3px solid #333;
+    border-radius: 10px;
+  }
+  .map-img{
+    width: 300px;
+    height: auto;
+    margin: 30px;
+    border: 3px solid #333;
+    border-radius: 10px;
+  }
+  
+  .options {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .option {
+    background-color: #f5b934;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+
+    
+  }
+  #nextCountryButton, #submitGuess, #giveUpButton, #result{
+    margin: auto;
+    z-index: 5;
+  }
+  
+  .option:hover {
+    background-color: #ffcb4c;
+  }
+  
+  #score {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .difficulty-section {
+    margin-top: 60px;
+  }
+  
+  .difficulty-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .diff-btn {
+    background-color: #f5b934;
+    color: #000;
+    padding: 30px 60px;
+    font-size: 25px;
+    border-radius: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    margin: 10px;
+    width: 500px;
+    height: 100px;
+    text-decoration: none;
+  }
+  
+  .diff-btn:hover {
+    background-color: #ffcb4c;
+  }
+  .backbtn{
+    background-color: #f76222;
+    color: #000;
+    padding:10px 20px;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    margin: 80px;
+    width: 150px;
+    height: 75px;
+    text-decoration: none;
+  }
+  .backbtn2{
+    background-color: #f76222;
+    color: #000;
+    padding:10px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: 550;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    margin: 20px;
+    width: 125px;
+    height: 60px;
+    text-decoration: none;
+  }
+  #result{
+    width: 100%;
+    top: 0;
+    height: 0;
+
+  }
+  .aboutlink {
+    position: fixed;
+    top: 50px;
+    right: 60px;
+    color: #030b41;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .aboutlink:hover {
+    color: #050e5b;
+  }
+  
+  .aboutlink .material-symbols-outlined {
+    font-size: 20px;
+    vertical-align: middle;
+
+  }
+  
+  .aboutusbody {
+    background-color: #F9F4E9; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 90px;
+    gap: 10px;
+}
+
+.footeraboutus {
+  background-color: #030b41;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    height: 100px;
+    margin-top: 40px; 
+}
+
+.aboutusheader {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0; 
+}
+
+.aboutusheader h1 {
+   font-family: "Caveat Brush", cursive;
+    color: rgb(163, 92, 0);
+    font-size: 40px;
+    margin: 0; 
+}
+.aboutusheader .contact {
+  position: fixed;
+  top: 25px;
+  right: 5px;
+  text-align: center;
+  color: rgb(163, 92, 0);
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutusheader .contact p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0 0 0;
+  font-size: 15px;
+}
+
+.explanation {
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    background-color: #FDD8A5; 
+    border-radius: 30px;
+    border: 8px solid #ffdba1; 
+    height: auto; 
+    font-family: "Caveat Brush", cursive;
+}
+
+.explanation p {
+    font-size: 24px; 
+    text-align: left;
+    color: #5C3A28; 
+}
+
+.logo {
+    padding-left: 100px;
+}
+
+.Logo img {
+    display: block;
+    margin: 0 auto;
+    width: 90%; 
+    width: 270px; 
+    border-radius: 15px; 
+}
+.aboutusheader .material-symbols-outlined {
+  font-size: 22px;
+  vertical-align: middle;
+}
+.aboutusheader p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.contactus {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+#countryDropdown{
+  background-color: #f5b934;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.hints{
+  font-size: 20px;
+  margin: 10px;
+}
+.results {
+  display: inline-table;
+  border-radius: 8px;      
+  padding: 5px 10px;       
+  background-color: #fff8da;
+  font-size: 15px;
+}
+.mainfooter {
+  background-color: #030b41;       
+  color: #f76222;       
+  text-align: center;             
+  padding: 10px 0;               
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif; 
+  margin-top: 18px;
+}
+
+.mainooter p {
+  margin: 5px 0;               
+}

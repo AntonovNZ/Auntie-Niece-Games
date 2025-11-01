@@ -1,0 +1,42 @@
+<head>
+    <link rel="stylesheet" href="General.css">
+    <meta charset="UTF-8">
+    <title>Guess the country by flag</title>
+    <link rel="icon" href="Logo.png" type="image">
+  </head>
+  <body class="game-page">
+  
+    <header class="header">
+      <h1>Guess the country by flag</h1>
+    </header>
+  
+    <main class="quiz-area">
+      <div id="difficulty-select" class="difficulty-section">
+        <h1>Select difficulty</h1>
+        <div class="difficulty-buttons">
+          <button class="diff-btn" onclick="setDifficulty('easy')">Easy</button>
+          <button class="diff-btn" onclick="setDifficulty('medium')">Medium</button>
+          <button class="diff-btn" onclick="setDifficulty('hard')">Hard</button>
+          <button class="diff-btn" onclick="setDifficulty('impossible')">Impossible</button>
+        </div>
+        <button class="backbtn" onclick ="location.href='Startgame.html'"> Back to main menu </button>
+      </div>
+  
+      <div id="quiz-section" style="display:none;">
+        <div id="result"></div>
+        <h2 id="question">What country's flag is this?</h2>
+        <img id="flag" class="flag-img" alt="Country flag">
+        <div class="options">
+          <button class="option" id="opt1"></button>
+          <button class="option" id="opt2"></button>
+          <button class="option" id="opt3"></button>
+          <button class="option" id="opt4"></button>
+        </div>
+        <p id="score">Score:  1 / 1</p>
+        <button class="backbtn2" onclick ="location.href='Startgame.html'"> Back to main menu </button>
+      </div>`
+    </main>
+  
+    <script src="flaggame.js"></script>
+  </body>
+  </html>
