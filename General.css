@@ -279,7 +279,8 @@ body {
     margin: 0 auto;
     width: 90%; 
     width: 270px; 
-    border-radius: 15px; 
+    border-radius: 15px;
+    top: 0;
 }
 .aboutusheader .material-symbols-outlined {
   font-size: 22px;
